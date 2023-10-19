@@ -1,0 +1,5 @@
+&projwfc
+ prefix = 'graphene1',
+ outdir = './tmp/',
+ degauss = 0.01
+/

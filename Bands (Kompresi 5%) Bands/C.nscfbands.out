@@ -1,0 +1,171 @@
+
+     Program PWSCF v.6.7MaX starts on  5Aug2023 at 12:55:55 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/graphene1.save/
+     Atomic positions from file used, from input discarded
+
+     file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         547     547    163                86683    86683   14285
+
+
+
+     bravais-lattice index     =           12
+     lattice parameter (alat)  =       4.4276  a.u.
+     unit-cell volume          =     641.6553 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =         8.00
+     number of Kohn-Sham states=            8
+     kinetic-energy cutoff     =     100.0000  Ry
+     charge density cutoff     =     400.0000  Ry
+     Exchange-correlation= SLA  PW   PBX  PBC
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.427628  celldm(2)=   1.000000  celldm(3)=   8.536065
+     celldm(4)=  -0.500000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   8.536065 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.117150 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ./Pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: ecdf03482cb4269f2fcfa842d572f30f
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+
+     24 Sym. Ops., with inversion, found (18 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.0000000   0.0000000   2.1340162  )
+         2           C   tau(   2) = (  -0.0000000   0.5773503   2.1340162  )
+
+     number of k points=   131  Gaussian smearing, width (Ry)=  0.0200
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:    86683 G-vectors     FFT dimensions: (  30,  30, 250)
+
+     Estimated max dynamical RAM per process >      91.24 MB
+
+     Check: negative core charge=   -0.000002
+
+     The potential is recalculated from file :
+     ./tmp/graphene1.save/charge-density
+
+
+     negative rho (up, down):  1.319E-04 0.000E+00
+     Starting wfcs are    8 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  1.25E-12,  avg # of iterations = 61.3
+
+     total cpu time spent up to now is      683.7 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     Writing output data file ./tmp/graphene1.save/
+
+     init_run     :      1.25s CPU      1.67s WALL (       1 calls)
+     electrons    :    676.25s CPU    681.45s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.34s CPU      0.57s WALL (       1 calls)
+     hinit0       :      0.50s CPU      0.65s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :    676.25s CPU    681.45s WALL (       1 calls)
+     v_of_rho     :      0.21s CPU      0.39s WALL (       1 calls)
+     newd         :      0.08s CPU      0.11s WALL (       1 calls)
+     PAW_pot      :      0.11s CPU      0.11s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.27s CPU      0.39s WALL (     131 calls)
+     cegterg      :    657.52s CPU    661.48s WALL (     455 calls)
+
+     Called by *egterg:
+     cdiaghg      :      1.18s CPU      1.60s WALL (    8162 calls)
+     h_psi        :    524.44s CPU    526.23s WALL (    8617 calls)
+     s_psi        :     21.68s CPU     21.77s WALL (    8617 calls)
+     g_psi        :      4.03s CPU      4.04s WALL (    8031 calls)
+
+     Called by h_psi:
+     h_psi:calbec :     20.55s CPU     20.62s WALL (    8617 calls)
+     vloc_psi     :    480.78s CPU    482.11s WALL (    8617 calls)
+     add_vuspsi   :     21.70s CPU     22.11s WALL (    8617 calls)
+
+     General routines
+     calbec       :     20.49s CPU     20.58s WALL (    8617 calls)
+     fft          :      0.13s CPU      0.18s WALL (      12 calls)
+     fftw         :    427.44s CPU    428.65s WALL (   74778 calls)
+     davcio       :      0.17s CPU      1.03s WALL (     262 calls)
+
+     Parallel routines
+
+     PWSCF        :  11m18.01s CPU  11m30.33s WALL
+
+
+   This run was terminated on:  13: 7:25   5Aug2023            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

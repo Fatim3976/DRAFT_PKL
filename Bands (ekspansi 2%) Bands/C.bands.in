@@ -1,0 +1,6 @@
+&BANDS
+prefix = 'graphene1',
+outdir = './tmp/',
+filband = 'graphene.bands', 
+/
+

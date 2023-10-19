@@ -1,0 +1,5 @@
+&DOS
+prefix = 'graphene1',
+outdir = './tmp/',
+fildos = 'graphene.dos', 
+/
